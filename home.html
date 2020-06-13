@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Movie Tracker Home</title>
+    <link rel="stylesheet" type="text/css" href="my.css">
+</head>
+<body>
+  <!--Navigation bar-->
+<ul>
+
+  <li><div style="background-color:black;color:white;padding:14px;text-align:center;"><b><mark>MovieTracker</b></mark></div></li>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="add.html">Add</a></li>
+  <li style="float:right"><a href="signup.html">Signup</a></li>
+  <li style="float:right;border-left:1px solid #bbb;"><a href="login.html">Login</a></li>
+</ul>
+<!--Content of Home page starts here-->
+<body>
+  <div class="r1 gab">
+    <br><br>
+    <center>
+        <span style="color: #f1f1f1;" onclick="moviename('num')"> 0-9 </span>
+        <span style="color:#f1f1f1;" onclick="moviename('01')">A</span>
+        <span style="color:#f1f1f1 ;" onclick="moviename('02')">B</span>
+        <span style="color:#f1f1f1;" onclick="moviename('03')">C</span>
+        <span style="color:#f1f1f1;" onclick="moviename('04')">D</span>
+        <span style="color:#f1f1f1;" onclick="moviename('05')">E</span>
+        <span style="color:#f1f1f1;" onclick="moviename('06')">F</span>
+        <span style="color:#f1f1f1;" onclick="moviename('07')">G</span>
+        <span style="color:#f1f1f1;" onclick="moviename('08')">H</span>
+        <span style="color:#f1f1f1;" onclick="moviename('09')">I</span>
+        <span style="color:#f1f1f1;" onclick="moviename('10')">J</span>
+        <span style="color:#f1f1f1;" onclick="moviename('11')">K</span>
+        <span style="color:#f1f1f1;" onclick="moviename('12')">L</span>
+        <span style="color:#f1f1f1;" onclick="moviename('13')">M</span>
+        <span style="color:#f1f1f1;" onclick="moviename('14')">N</span>
+        <span style="color:#f1f1f1;" onclick="moviename('15')">O</span>
+        <span style="color:#f1f1f1;" onclick="moviename('16')">P</span>
+        <span style="color:#f1f1f1;" onclick="moviename('17')">Q</span>
+        <span style="color:#f1f1f1;" onclick="moviename('18')">R</span>
+        <span style="color:#f1f1f1;" onclick="moviename('19')">S</span>
+        <span style="color:#f1f1f1;" onclick="moviename('20')">T</span>
+        <span style="color:#f1f1f1;" onclick="moviename('21')">U</span>
+        <span style="color:#f1f1f1;" onclick="moviename('22')">V</span>
+        <span style="color:#f1f1f1;" onclick="moviename('23')">W</span>
+        <span style="color:#f1f1f1;" onclick="moviename('24')">X</span>
+        <span style="color:#f1f1f1;" onclick="moviename('25')">Y</span>
+        <span style="color:#f1f1f1;" onclick="moviename('26')">Z</span>
+      </b>
+
+<div class="r2">
+  <br>
+
+      <button onclick="movietype('01')"> Action</button>
+      <button onclick="movietype('02')"> Adventure </button>
+      <button onclick="movietype('03')"> Animation </button>
+      <button onclick="movietype('04')"> Children </button>
+      <button onclick="movietype('05')"> Comedy </button>
+      <button onclick="movietype('06')"> Crime </button>
+      <button onclick="movietype('07')"> Documentary </button>
+      <button onclick="movietype('08')"> Drama </button>
+      <button onclick="movietype('09')"> Family </button>
+      <button onclick="movietype('10')"> Fantasy </button>
+      <button onclick="movietype('11')"> Food </button>
+      <button onclick="movietype('12')"> Home And Garden </button>
+      <button onclick="movietype('13')"> Horror </button>
+      <button onclick="movietype('14')"> Mini-Series </button>
+      <button onclick="movietype('15')"> Mystery </button>
+      <button onclick="movietype('16')"> News </button>
+      <button onclick="movietype('17')"> Reality </button>
+      <button onclick="movietype('18')"> Romance </button>
+      <button onclick="movietype('19')"> Sci-Fi </button>
+      <button onclick="movietype('20')"> Sport </button>
+      <button onclick="movietype('21')"> Suspense </button>
+      <button onclick="movietype('22')"> Talk Show </button>
+      <button onclick="movietype('23')"> Thriller </button>
+      <button onclick="movietype('24')"> Travel </button>
+
+</div>
+</div>
+<br>
+
+
+
+<div class="row">
+  <div class="column">
+
+    <img src=" https://cdn.shopify.com/s/files/1/1416/8662/products/Shrek_Forever_After_2010_original_film_art_2000x.jpg?v=1559197647" alt=" " width="250px" height="400px">
+
+  </div>
+
+  <div class="column">
+
+    <img src=" https://upload.wikimedia.org/wikipedia/en/6/6c/The_Boxcar_Children_poster.jpg" alt=" " width="250px" height="400px">
+
+  </div>
+
+  <div class="column">
+
+    <img src=" https://upload.wikimedia.org/wikipedia/en/0/01/Spy_Kids_3-D_movie_poster.jpg" alt=" " width="250px" height="400px">
+
+  </div>
+
+  <div class="column">
+
+    <img src=" https://m.media-amazon.com/images/M/MV5BY2JhODU1NmQtNjllYS00ZmQwLWEwZjYtMTE5NjA1M2YyMzdjXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg" alt=" " width="250px" height="400px">
+    <h2> </h2>
+  </div>
+</div> <br>
+<script>
+   var text= "The movie list is  " + "<br>";
+   var text2="The movie list is " + "<br>" + "<br>"
+     var movielist = [{name:"finalscore", type:"Action"},{name:"Actionstar", type:"Action"},{name:"Alpha", type:"Adventure"},{name:"Predestination", type:"oh my kadavul"},
+                     {name:"Joker", type:"Crime"},{name:"AvengersEndgame", type:"Action"},{name:"Spider-Man", type:"Adventure"},{name:"lion", type:"Children"}];
+     function moviename(nam){
+       for(var i=0; i<movielist.length; i++){
+         if(nam==movielist[i].name[0]){
+           text = text + movielist[i].name + "<br>";
+         }
+       }
+       document.write(text);
+     }
+
+     function movietype(typ) {
+       for(var i=0; i<movielist.length; i++){
+         if(typ==movielist[i].type){
+           text2 = text2 + movielist[i].name + "<br>";
+         }
+       }
+       document.write(text2);
+     }
+   </script>
+ </body>
+</html>

@@ -1,0 +1,111 @@
+
+
+
+<body>
+  <!--Navigation bar-->
+<ul>
+
+  <li><div style="background-color:black;color:white;padding:14px;text-align:center;"><b><mark>MovieTracker</b></mark></div></li>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="add.html">Add</a></li>
+  <li style="float:right"><a href="signup.html">Signup</a></li>
+  <li style="float:right;border-left:1px solid #bbb;"><a href="login.html">Login</a></li>
+</ul>
+<!--Content of Home page starts here-->
+
+
+<div class="header">
+      <p>
+        <p id="demo"> </p>
+
+      <script>  <button type="button" onclick='document.getElementById("demo").innerHTML = "movie"'>0-1</button> </script>
+
+     <a href="#01">0-9</a> &nbsp;
+     <a href="#02">A</a> &nbsp;
+     <a href="#05">B</a> &nbsp;
+     <a href="#06">C</a> &nbsp;
+     <a href="#07">D</a> &nbsp;
+     <a href="#08">E</a> &nbsp;
+     <a href="#03">F</a> &nbsp;
+     <a href="#04">G</a> &nbsp;
+     <a href="#09">H</a> &nbsp;
+     <a href="#10">J</a> &nbsp;
+     <a href="#11">K</a> &nbsp;
+     <a href="#12">L</a> &nbsp;
+     <a href="#13">M</a> &nbsp;
+     <a href="#14">N</a> &nbsp;
+     <a href="#15">O</a> &nbsp;
+     <a href="#16">P</a> &nbsp;
+     <a href="#17">Q</a> &nbsp;
+     <a href="#18">R</a> &nbsp;
+     <a href="#19">S</a> &nbsp;
+     <a href="#20">T</a> &nbsp;
+     <a href="#21">U</a> &nbsp;
+     <a href="#22">V</a> &nbsp;
+     <a href="#23">W</a> &nbsp;
+     <a href="#21">X</a> &nbsp;
+     <a href="#22">Y</a> &nbsp;
+     <a href="#23">Z</a> &nbsp;<br><br>
+
+
+
+
+
+
+     <a href="a.html">Action</a> &nbsp;
+     <a href="#02">Adventure</a> &nbsp;
+     <a href="#03">Animation</a> &nbsp;
+     <a href="#04">Children</a> &nbsp;
+     <a href="#05">Comedy</a> &nbsp;
+     <a href="#06">Crime</a> &nbsp;
+     <a href="#07">Documentary</a> &nbsp;
+     <a href="#08">Drama</a> &nbsp;
+     <a href="#09">Family</a> &nbsp;
+     <a href="#10">Fantasy</a> &nbsp;
+     <a href="#11">Food</a> &nbsp;
+     <a href="#12">Home and Gardens</a> &nbsp;
+     <a href="#13">Horror</a> &nbsp;
+     <a href="#14">MiniSeries</a> &nbsp;
+     <a href="#15">Mystery</a> &nbsp;
+     <a href="#16">Reality</a> &nbsp;
+     <a href="#17">Romance</a> &nbsp;
+     <a href="#18">Sci-Fi</a> &nbsp;
+     <a href="#19">Sport</a> &nbsp;
+     <a href="#20">Suspense</a> &nbsp;
+     <a href="#21">Talk Show</a> &nbsp;
+     <a href="#22">Thriller</a> &nbsp;
+     <a href="#23">Travel</a> &nbsp;
+  </p>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+  var tex= "The movie list is  " + "<br>";
+  var tex2="The movie list is " + "<br>" + "<br>"
+    var movielist = [{name:"GameOfThrones", type:"Action"},{name:"GodOfWar", type:"Action"},{name:"Alpha", type:"Adventure"},{name:"Predestination", type:"SciFi"},
+                    {name:"Joker", type:"Crime"},{name:"AvengersEndgame", type:"Action"},{name:"Spider-Man", type:"Adventure"},{name:"lion", type:"Children"}];
+    function moviename(nam){
+      for(var i=0; i<movielist.length; i++){
+        if(nam==movielist[i].name[0]){
+          tex = tex + movielist[i].name + "<br>";
+        }
+      }
+      document.write(tex);
+    }
+
+    function movietype(typ) {
+      for(var i=0; i<movielist.length; i++){
+        if(typ==movielist[i].type){
+          tex2 = tex2 + movielist[i].name + "<br>";
+        }
+      }
+      document.write(tex2);
+    }
+  </script>

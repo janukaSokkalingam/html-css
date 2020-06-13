@@ -1,0 +1,44 @@
+<!--start-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MovieTracker</title>
+    <link rel="stylesheet" href="my.css">
+  <header>
+    <ul>
+
+      <li><div style="background-color:black;color:white;padding:14px;text-align:center;"><b><mark>MovieTracker</b></mark></div></li>
+      <li><a class="active" href="home.html">Home</a></li>
+      <li><a href="add.html">Add</a></li>
+      <li style="float:right"><a href="signup.html">Signup</a></li>
+      <li style="float:right;border-left:1px solid #bbb;"><a href="login.html">Login</a></li>
+    </ul>
+  </header>
+</head>
+  <body>
+    <br>
+<div class="add-latest"data-aos="zoom-in">
+  <div class="add text-center">
+  <h3>Add Tv Show</h3>
+  <p>Name</p>
+  <form>
+    <input type="Name" placeholder="enter movie name" style="text-transform: capitalize;">
+    <button class="b1" onclick="ShowNameAdd(Name.value)">Add</button>
+  </form>
+  </div>
+</div>
+  <!---end--->
+  <script>
+      function ShowNameAdd(valu){
+        var letters = /^[A-Za-z]+$/;
+        if(valu[0].match(letters)){
+          document.getElementById('printtrue').style.color = 'green';
+          document.getElementById('printtrue').innerHTML = valu + " has been added";
+        }
+        else {
+          document.getElementById('printtrue').style.color = 'red';
+          document.getElementById('printtrue').innerHTML = "Invalid TV Show Name";
+        }
+      }
+    </script>
